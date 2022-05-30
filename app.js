@@ -17,4 +17,4 @@ mongoose.connect(dbURI)
         console.log(`MONGO DB Status : not connected\nAn error occurred: ${error}`)
     })
 
-app.use('/api/v1/', imageRouter);
+app.use('/api/v1/images', imageRouter);

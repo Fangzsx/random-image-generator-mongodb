@@ -4,5 +4,6 @@ const imageController = require('../controller/imageController')
 
 router.route('/')
     .get(imageController.getAllImages)
+    .post(imageController.addImage)
 
 module.exports = router;

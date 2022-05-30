@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 app.use(express.json())
+app.use(express.static(`${__dirname}/public`));
 const imageRouter = require('./routers/imageRouter');
 
 const dbURI = 'mongodb+srv://fangzsx:123123123@cluster0.jxdfu2m.mongodb.net/imagesdb?retryWrites=true&w=majority';
